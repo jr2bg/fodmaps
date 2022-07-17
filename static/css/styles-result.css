@@ -1,0 +1,11 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li::marker {
+  /*list-style-type: '⚠';*/
+  content: '>>';
+  color: #663793;
+}
