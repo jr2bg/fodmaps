@@ -102,3 +102,9 @@ footer h2 {
 li {
   font-size: 1.4rem;
 }
+
+textarea {
+  width:  min(600px, 65vw) ;      /* calc and viewport to the rescue */
+  height: calc(50vh - 40px);
+  resize: none;
+}

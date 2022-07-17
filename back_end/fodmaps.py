@@ -7,7 +7,9 @@ def wrangle_input(ingredients: str) -> list:
                     .replace("%", ",")             \
                     .replace("(", ",")             \
                     .replace(")", ",")             \
+                    .replace("\n", ",")             \
                     .split(",")                    
+                    
     return [ingredient.strip() for ingredient in ingredients]
 
 def is_ingredient_fodmap(ingredient: str) -> bool:
