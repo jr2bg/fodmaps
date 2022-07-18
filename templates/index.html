@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lan="es">
+  <head>
+    <meta charset="UTF-8" >
+    <title>FODMAP DETECTOR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+      <a href="{{ url_for('index') }}">
+        <img id="logo" src="static/images/logo.jpg" alt="RP logo" />
+      </a>
+      <div>
+        <h1>Buscador de FODMAPs</h1>
+      </div>
+      <div></div>
+    </header>
+    <main>
+      <div id="ingredients-div">
+        <form action="{{ url_for('submit') }}" method="post">
+            <label>Introduzca los ingredientes separados por comas o saltos de línea (puede copiar y pegar los ingredientes de algún sitio web):</label>
+            <textarea id="ingredients" name="ingredients" placeholder="leche de vaca, manzana .." required ></textarea>
+            <input type="submit" value="Enviar" />
+        </form>
+      </div>
+      <div></div>
+    </main>
+    <footer>
+      <h2>Contacto</h2>
+      <p id="person">
+        <a class="bi bi-person-circle"></a> Nutrióloga Rebeca Pacheco
+      </p>
+      <div id="social-networks">
+      
+        <a href="https://www.facebook.com/RP.nutricion.fodmap" class="bi bi-facebook"  target="_blank"></a>
+      
+        <a href="https://www.instagram.com/rp.nutricion.fodmap/" class="bi bi-instagram"  target="_blank"></a>
+      
+        <a href="https://www.tiktok.com/@rp.nutricion.fodmap" class="bi bi-tiktok"  target="_blank"></a>
+      
+        <a href="mailto:ln.rebeca.pacheco@gmail.com" class="bi bi-envelope"  target="_blank"></a>
+       
+    </div>
+    </footer>
+  </body>
+</html>
