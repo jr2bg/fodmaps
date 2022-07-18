@@ -1,1 +1,1 @@
-web: gunicorn app:fodmaps_server
+web: gunicorn app:app
